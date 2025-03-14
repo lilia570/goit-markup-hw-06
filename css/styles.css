@@ -59,7 +59,10 @@ a {
     padding: 0 16px;
   }
 }
-
+.nav-menu,
+.contacts {
+  display: none;
+}
 .header {
   color: #4d5ae5;
   border-bottom: 1px solid #e7e9fc;
@@ -73,13 +76,6 @@ a {
   justify-content: space-between;
 }
 
-.nav-menu,
-.contacts {
-  display: none;
-}
-.contacts-info {
-  display: none;
-}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -118,4 +114,31 @@ a {
 }
 button {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+  }
+  .contacts {
+    font-style: normal;
+    display: block;
+  }
+  .navigation {
+    align-items: center;
+    display: flex;
+  }
+  .logo-one {
+    padding: 24px 0;
+    margin-right: 120px;
+  }
+}
+.contacts-info .contacts-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
 }
