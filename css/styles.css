@@ -135,10 +135,52 @@ button {
     padding: 24px 0;
     margin-right: 120px;
   }
+  .current::after {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    content: '';
+    display: inline-block;
+    transition: width 0.3s ease-in-out;
+  }
+  .navigation {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: flex;
+    align-items: center;
+  }
+  .nav-item:focus::after {
+    width: 100%;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+
+  .contacts-info .contacts-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+  }
 }
-.contacts-info .contacts-link {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-decoration: none;
+.current::after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  content: '';
+  display: inline-block;
+  transition: width 0.3s ease-in-out;
 }
