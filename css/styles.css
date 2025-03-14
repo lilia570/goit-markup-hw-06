@@ -63,6 +63,10 @@ a {
 .contacts {
   display: none;
 }
+.contacts-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 15px;
+}
 .header {
   color: #4d5ae5;
   border-bottom: 1px solid #e7e9fc;
@@ -99,9 +103,9 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #404bbf;
-  margin-right: 76px;
   display: inline-block;
   text-decoration: none;
+  padding: 16px 0;
 }
 .burger-button {
   padding: 0;
@@ -132,7 +136,7 @@ button {
     display: flex;
   }
   .logo-one {
-    padding: 24px 0;
+    padding: 16px 0;
     margin-right: 120px;
   }
   .current::after {
@@ -166,10 +170,17 @@ button {
   }
 
   .contacts-info .contacts-link {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: #434455;
     text-decoration: none;
+    font-size: 12px;
+  }
+  .contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: 10px;
   }
 }
 .current::after {
@@ -183,4 +194,74 @@ button {
   content: '';
   display: inline-block;
   transition: width 0.3s ease-in-out;
+}
+.contacts-info {
+  display: flex;
+  gap: 40px;
+}
+.contacts-info .contacts-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+}
+.navigation {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1158px) {
+  .logo-one {
+    margin-right: 76px;
+  }
+  .contacts-info {
+    gap: 12px;
+    align-items: center;
+  }
+  .contacts-info .contacts-link {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+  }
+}
+.solutions {
+  align-items: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 496px;
+  padding-bottom: 48px;
+}
+h1 {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 496px;
+}
+.section-one {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  margin: 0 auto;
 }
