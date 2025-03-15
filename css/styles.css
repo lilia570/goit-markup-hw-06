@@ -539,5 +539,6 @@ h2 {
 @media screen and (min-width: 769px) {
   .text {
     display: flex;
+    transform: translateY(0%);
   }
 }
