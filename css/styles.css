@@ -1,7 +1,7 @@
 body {
   color: #434455;
   background-color: #ffffff;
-  font-size: 16;
+  font-size: 16px;
   font-weight: regular;
   font-family: 'Roboto', sans-serif;
 }
@@ -397,6 +397,15 @@ h1 {
   background-color: #ffffff;
   margin-bottom: 8px;
 }
+.our-two {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
 
 .ulteam {
   background-color: #ffffff;
@@ -412,8 +421,17 @@ h1 {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.nameteam {
+  padding: 32px 0;
+  text-align: center;
+  margin-bottom: 8px;
+}
 
 .feautures {
+  font-size: 16px;
+  color: #434455;
+}
+.feautures-two {
   font-size: 16px;
   color: #434455;
 }
@@ -453,5 +471,67 @@ h1 {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+  }
+  .h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+  .text {
+    display: none;
+  }
+  .overlay img {
+    width: 288px;
+    height: 280px;
+    object-fit: cover;
+  }
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.nameteamtwo {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.overlay {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  transform: translateY(0%);
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  transition: transform 250ms ease-in-out;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #4d5ae5;
+  overflow: hidden;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  color: #f4f4fd;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 769px) {
+  .text {
+    display: flex;
+    transform: translateY(0%);
   }
 }
