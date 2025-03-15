@@ -1,8 +1,37 @@
- 
- 
- 
+body {
+  color: #434455;
+  background-color: #ffffff;
+  font-size: 16;
+  font-weight: regular;
+  font-family: 'Roboto', sans-serif;
+}
 
+.header {
+  color: #4d5ae5;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  color: #404bbf;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.current::after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  content: '';
+  display: inline-block;
+  transition: width 0.3s ease-in-out;
+}
 
 .contacts {
   font-style: normal;
@@ -21,7 +50,9 @@
   align-items: center;
 }
 
- 
+.logo-style {
+  color: #2e2f42;
+}
 
 .section-one {
   background-color: #2e2f42;
@@ -170,7 +201,14 @@ h1 {
   gap: 40px;
 }
 
- 
+.strategy-one {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
 
 h2 {
   font-weight: 500;
@@ -186,7 +224,15 @@ p {
   letter-spacing: 0.02em;
 }
 
- 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 .h3 {
   font-size: 36px;
   line-height: 1.11;
@@ -207,7 +253,21 @@ p {
   background-color: #2e2f42;
   padding: 100px 0;
 }
- 
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #404bbf;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
+  display: flex;
+  text-decoration: none;
+}
 
 span {
   color: #f4f4fd;
@@ -272,24 +332,20 @@ span {
   display: flex;
   gap: 40px;
 }
+
+.two {
+  padding: 120px 0;
+}
+
 .menutwo {
   display: flex;
   gap: 24px;
 }
- .two {
-  padding: 120px 0;
-}
+
 .itemtwo {
   width: calc((100% - 3 * 24px) / 4);
 }
-.strategy-one {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
+
 .nameteam {
   padding: 32px 0;
   text-align: center;
@@ -328,9 +384,24 @@ ul {
   border-top: none;
 }
 
- 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
- 
+.container {
+  margin: 0 auto;
+  width: 1158px;
+  padding: 0 15px;
+}
 
 .footer .container {
   align-items: baseline;
