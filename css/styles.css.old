@@ -94,7 +94,7 @@ h1 {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  border-radius: 4px;
+   
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -224,15 +224,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+ 
 .h3 {
   font-size: 36px;
   line-height: 1.11;
@@ -278,7 +270,7 @@ span {
   max-width: 264px;
 }
 
-.goal {
+.strategy-one {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -514,12 +506,7 @@ img {
   display: flex;
   justify-content: center;
 }
-.iconadress:hover {
-  background-color: #404bbf;
-}
-.iconadress:focus {
-  background-color: #404bbf;
-}
+ 
 .icon-two {
   width: 40px;
   height: 40px;
