@@ -297,6 +297,7 @@ button {
     max-width: 496px;
     margin-bottom: 72px;
   }
+
   .section-one {
     padding: 112px 0;
   }
@@ -365,6 +366,9 @@ button {
     content: '';
     display: inline-block;
     transition: width 0.3s ease-in-out;
+  }
+  .section-three .container {
+    flex-wrap: wrap;
   }
   .navigation {
     font-family: 'Raleway', sans-serif;
@@ -473,7 +477,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -640,7 +644,6 @@ h1 {
   .icon {
     fill: #f4f4fd;
   }
-
   .section-three {
     width: 320px;
     height: 2232px;
@@ -660,7 +663,6 @@ h1 {
     flex-direction: column;
     gap: 72px;
     width: 264px;
-    height: 1928px;
   }
   .our {
     font-weight: 500;
