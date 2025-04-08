@@ -47,7 +47,7 @@
       ),
       url(../images/people-office@2x.jpg);
     padding: 188px 0;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
@@ -64,7 +64,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 320px;
+    
   }
 }
 @media screen and (min-width: 768px) {
@@ -75,10 +75,11 @@
       ),
       url(../images/people-office.tablet@2x.jpg);
     padding: 188px 0;
-    background-size: cover;
+    
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 768px;
+    max-width: 100%;
+     background-size: 100%;
   }
 }
 
@@ -374,7 +375,7 @@ button {
     margin-bottom: 0px;
   }
   .section-one {
-    padding: 112px 0;
+    padding: 72px 0;
   }
 
   .container-two svg {
@@ -1279,8 +1280,13 @@ h1 {
     justify-content: flex-start;
     gap: 72px 24px;
     padding: 0 108px;
+    
   }
-
+   
+.footerlogo{margin: 0;
+padding: 0;}
+.footerdiv{margin: 0;
+padding: 0;}
   .logo {
     display: flex;
     justify-content: start;
@@ -1305,6 +1311,7 @@ h1 {
 
   .footer-input {
     width: 264px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1313,11 +1320,15 @@ h1 {
     margin-left: auto;
     gap: 0;
     padding: 0 15px;
+    margin-bottom: 0;
+    
   }
+  .footer{max-height: 312px;}
   .footerlogo {
     margin-right: 120px;
+    margin-bottom: 0;
   }
-
+ 
   .footerdiv {
     margin-right: 80px;
   }
@@ -1543,7 +1554,9 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 4px;
 }
+
 .input:checked label .privacy-policy:checked {
   background-color: #404bbf;
   display: block;
