@@ -651,6 +651,7 @@ h1 {
   .container-two svg {
     display: none;
   }
+  .footerdiv {margin-bottom: 72px;}
    section{padding: 96px 0;}
   .solutions {
     font-size: 36px;
